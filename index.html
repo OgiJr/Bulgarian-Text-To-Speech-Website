@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8" />
+    <title>Прочети.ме</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+
+    <link rel="icon"
+          type="image/png"
+          href="images/favicon.ico">
+
+</head>
+
+    <body>
+        <div id="wrapper">
+            <!-- header begin -->
+            <header class="transparent scroll-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-between">
+                                <div class="align-self-center header-col-left">
+                                    <!-- logo begin -->
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img alt="" class="logo" src="images/logo-small.png" />
+                                            <img alt="" class="logo-2" src="images/logo-small-black.png" />
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                    <!-- logo close -->
+                                </div>
+         <div class="align-self-center ml-auto header-col-mid">
+                                    <!-- mainmenu begin -->
+                                    <ul id="mainmenu">
+                                        <li>
+                                            <a href="index.html">Изтегли приложението</a>
+                                            <ul>
+                                                <li><a href="index.html">Google Play</a></li>
+                                                <li><a href="index-startup.html">App Store</a></li>
+                                            </ul>
+                                        </li>
+                                        </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- header close -->
+            <!-- content begin -->
+            <div class="no-bottom no-top" id="content">
+                <div id="top"></div>
+
+                <section data-bgimage="url(images/background/9.png) bottom" class="full-height no-top no-bottom vertical-center text-light">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 wow fadeInRight" data-wow-delay=".5s">
+                                <h1>Прочети.ме</h1>
+                                <p class="lead">Най-добрият гласов синтез на български език!&nbsp;&nbsp;</p>
+                            </div>
+                            <div class="col-lg-6 offset-lg-1 wow fadeInLeft" data-wow-delay=".5s">
+                                <br />
+                                <br />
+                                <br />
+                                <img src="images/misc/iphone-mockup.png" class="img-fluid">
+                            </div>
+
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-color-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="container">
+                                    <div class="row">
+                                        <center>
+                                            <div class="field-set">
+                                                <h1>Синтезирай Текст!</h1>
+                                                <br />
+                                                <textarea name="message2" id="synthesisText" class="form-control" style="display: inherit; width: 270%; height: 20vw;" placeholder="Вашият текст"></textarea>
+                                                <br />
+                                                <div class="spacer-single"></div>
+                                                <button id="startSynthesisAsyncButton" class="btn-custom">
+                                                    Започни синтенз
+                                                </button>
+                                                <button id="pauseButton" class="btn-custom">
+                                                    Пауза
+                                                </button>
+                                                <button id="resumeButton" class="btn-custom" href="#">
+                                                    Продължи
+                                                </button>
+                                            </div>
+											<table hidden>
+										      <tr>
+										        <td align="right" valign="top"><label for="resultsDiv">Results</label></td>
+										        <td><textarea id="resultsDiv" readonly style="display: inline-block;width:500px;height:50px"></textarea></td>
+										      </tr>
+										      <tr>
+										        <td align="right" valign="top"><label for="eventsDiv">Events</label></td>
+										        <td><textarea id="eventsDiv" readonly style="display: inline-block;width:500px;height:200px"></textarea></td>
+										      </tr>
+										      <tr>
+										        <td align="right" valign="top"><label for="highlightDiv">Highlight</label></td>
+										        <td><div id="highlightDiv" style="display: inline-block;width:800px;"></div></td>
+										      </tr>
+										    </table>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <!-- content close -->
+
+            <!-- footer begin -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 sm-text-center mb-sm-30">
+                            <div class="mt10">&copy; Copyright 2021 - Ognian Trajanov and Christian Varbanovski</div>
+                        </div>
+
+                        <div class="col-md-6 text-md-right text-sm-left">
+                            <div class="social-icons">
+                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer close -->
+
+            <div id="preloader">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+        </div>
+
+		<script src="microsoft.cognitiveservices.speech.sdk.bundle.js"></script>
+		<script type="text/javascript" src="key.js"></script>
+
+	    <!-- Speech SDK Authorization token -->
+	    <script>
+	    // Note: Replace the URL with a valid endpoint to retrieve
+	    //       authorization tokens for your subscription.
+	    var authorizationEndpoint = "token.php";
+
+	    function RequestAuthorizationToken() {
+	      if (authorizationEndpoint) {
+	        var a = new XMLHttpRequest();
+	        a.open("GET", authorizationEndpoint);
+	        a.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	        a.send("");
+	        a.onload = function() {
+	            var token = JSON.parse(atob(this.responseText.split(".")[1]));
+	            regionOptions = "westeurope";
+	            authorizationToken = this.responseText;
+	            subscriptionKey.disabled = true;
+	            subscriptionKey = "using authorization token (hit F5 to refresh)";
+	            console.log("Got an authorization token: " + token);
+	        }
+	      }
+	    }
+	    </script>
+
+	    <!-- Speech SDK USAGE -->
+	    <script>
+	      // On document load resolve the Speech SDK dependency
+	      function Initialize(onComplete) {
+	        if (!!window.SpeechSDK) {
+	          document.getElementById('content').style.display = 'block';
+	          onComplete(window.SpeechSDK);
+	        }
+	      }
+	    </script>
+
+	    <!-- Browser Hooks -->
+	    <script>
+	      // status fields and start button in UI
+	      var resultsDiv, eventsDiv;
+	      var highlightDiv;
+	      var startSynthesisAsyncButton, pauseButton, resumeButton;
+	      var updateVoiceListButton;
+
+	      // subscription key and region for speech services.
+	  	var regionOptions = "westeurope";
+	      var authorizationToken;
+	      var voiceOptions = "bg-BG-BorislavNeural";
+	  	var isSsml = false;
+	      var SpeechSDK;
+	      var synthesisText;
+	      var synthesizer;
+	      var player;
+	      var wordBoundaryList = [];
+
+	      document.addEventListener("DOMContentLoaded", function () {
+	        startSynthesisAsyncButton = document.getElementById("startSynthesisAsyncButton");
+	        updateVoiceListButton = document.getElementById("updateVoiceListButton");
+	        pauseButton = document.getElementById("pauseButton");
+	        resumeButton = document.getElementById("resumeButton");
+	        regionOptions = "westeurope";
+	        resultsDiv = document.getElementById("resultsDiv");
+	        eventsDiv = document.getElementById("eventsDiv");
+	        voiceOptions = "bg-BG-BorislavNeural";
+	        isSsml = false;
+	        highlightDiv = document.getElementById("highlightDiv");
+
+	        setInterval(function () {
+	          if (player !== undefined) {
+	            const currentTime = player.currentTime;
+	            var wordBoundary;
+	            for (const e of wordBoundaryList) {
+	              if (currentTime * 1000 > e.audioOffset / 10000) {
+	                wordBoundary = e;
+	              } else {
+	                break;
+	              }
+	            }
+	            if (wordBoundary !== undefined) {
+	              highlightDiv.innerHTML = synthesisText.value.substr(0, wordBoundary.textOffset) +
+	                      "<span class='highlight'>" + wordBoundary.text + "</span>" +
+	                      synthesisText.value.substr(wordBoundary.textOffset + wordBoundary.wordLength);
+	            } else {
+	              highlightDiv.innerHTML = synthesisText.value;
+	            }
+	          }
+	        }, 50);
+
+	        pauseButton.addEventListener("click", function () {
+	          player.pause();
+	          pauseButton.disabled = true;
+	          resumeButton.disabled = false;
+	        });
+
+	        resumeButton.addEventListener("click", function () {
+	          player.resume();
+	          pauseButton.disabled = false;
+	          resumeButton.disabled = true;
+	        });
+
+	        startSynthesisAsyncButton.addEventListener("click", function () {
+	          startSynthesisAsyncButton.disabled = true;
+	          wordBoundaryList = [];
+	          synthesisText = document.getElementById("synthesisText");
+
+	          // if we got an authorization token, use the token. Otherwise use the provided subscription key
+	          var speechConfig;
+	          if (authorizationToken) {
+	            speechConfig = SpeechSDK.SpeechConfig.fromAuthorizationToken(authorizationToken, regionOptions);
+	          } else {
+	            if (subscriptionKey === "" || subscriptionKey === "subscription") {
+	              alert("Please enter your Microsoft Cognitive Services Speech subscription key!");
+	              return;
+	            }
+	            speechConfig = SpeechSDK.SpeechConfig.fromSubscription(subscriptionKey, regionOptions);
+	          }
+
+	          speechConfig.speechSynthesisVoiceName = voiceOptions;
+
+	          player = new SpeechSDK.SpeakerAudioDestination();
+	          player.onAudioEnd = function (_) {
+	            window.console.log("playback finished");
+	            eventsDiv.innerHTML += "playback finished" + "\r\n";
+	            startSynthesisAsyncButton.disabled = false;
+	            pauseButton.disabled = true;
+	            resumeButton.disabled = true;
+	            wordBoundaryList = [];
+	          };
+
+	          var audioConfig  = SpeechSDK.AudioConfig.fromSpeakerOutput(player);
+
+	          synthesizer = new SpeechSDK.SpeechSynthesizer(speechConfig, audioConfig);
+
+	          // The event synthesizing signals that a synthesized audio chunk is received.
+	          // You will receive one or more synthesizing events as a speech phrase is synthesized.
+	          // You can use this callback to streaming receive the synthesized audio.
+	          synthesizer.synthesizing = function (s, e) {
+	            window.console.log(e);
+	            eventsDiv.innerHTML += "(synthesizing) Reason: " + SpeechSDK.ResultReason[e.result.reason] +
+	                    "Audio chunk length: " + e.result.audioData.byteLength + "\r\n";
+	          };
+
+	          // The synthesis started event signals that the synthesis is started.
+	          synthesizer.synthesisStarted = function (s, e) {
+	            window.console.log(e);
+	            eventsDiv.innerHTML += "(synthesis started)" + "\r\n";
+	            pauseButton.disabled = false;
+	          };
+
+	          // The event synthesis completed signals that the synthesis is completed.
+	          synthesizer.synthesisCompleted = function (s, e) {
+	            console.log(e);
+	            eventsDiv.innerHTML += "(synthesized)  Reason: " + SpeechSDK.ResultReason[e.result.reason] +
+	                    " Audio length: " + e.result.audioData.byteLength + "\r\n";
+	          };
+
+	          // The event signals that the service has stopped processing speech.
+	          // This can happen when an error is encountered.
+	          synthesizer.SynthesisCanceled = function (s, e) {
+	            const cancellationDetails = SpeechSDK.CancellationDetails.fromResult(e.result);
+	            let str = "(cancel) Reason: " + SpeechSDK.CancellationReason[cancellationDetails.reason];
+	            if (cancellationDetails.reason === SpeechSDK.CancellationReason.Error) {
+	              str += ": " + e.result.errorDetails;
+	            }
+	            window.console.log(e);
+	            eventsDiv.innerHTML += str + "\r\n";
+	            startSynthesisAsyncButton.disabled = false;
+	            pauseButton.disabled = true;
+	            resumeButton.disabled = true;
+	          };
+
+	          // This event signals that word boundary is received. This indicates the audio boundary of each word.
+	          // The unit of e.audioOffset is tick (1 tick = 100 nanoseconds), divide by 10,000 to convert to milliseconds.
+	          synthesizer.wordBoundary = function (s, e) {
+	            window.console.log(e);
+	            eventsDiv.innerHTML += "(WordBoundary), Text: " + e.text + ", Audio offset: " + e.audioOffset / 10000 + "ms." + "\r\n";
+	            wordBoundaryList.push(e);
+	          };
+
+	          const complete_cb = function (result) {
+	            if (result.reason === SpeechSDK.ResultReason.SynthesizingAudioCompleted) {
+	              resultsDiv.innerHTML += "synthesis finished";
+	            } else if (result.reason === SpeechSDK.ResultReason.Canceled) {
+	              resultsDiv.innerHTML += "synthesis failed. Error detail: " + result.errorDetails;
+	            }
+	            window.console.log(result);
+	            synthesizer.close();
+	            synthesizer = undefined;
+	          };
+	          const err_cb = function (err) {
+	            startSynthesisAsyncButton.disabled = false;
+	            phraseDiv.innerHTML += err;
+	            window.console.log(err);
+	            synthesizer.close();
+	            synthesizer = undefined;
+	          };
+	          if (isSsml == true) {
+	            synthesizer.speakSsmlAsync(synthesisText.value,
+	                    complete_cb,
+	                    err_cb);
+	          } else {
+	            synthesizer.speakTextAsync(synthesisText.value,
+	                    complete_cb,
+	                    err_cb);
+	          }
+	        });
+
+	        Initialize(function (speechSdk) {
+	          SpeechSDK = speechSdk;
+	          startSynthesisAsyncButton.disabled = false;
+	          pauseButton.disabled = true;
+	          resumeButton.disabled = true;
+
+	          // in case we have a function for getting an authorization token, call it.
+	          if (typeof RequestAuthorizationToken === "function") {
+	            RequestAuthorizationToken();
+	          }
+	        });
+	      });
+	    </script>
+
+        <!-- Javascript Files
+    ================================================== -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/easing.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/validation.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/enquire.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/jquery.plugin.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <script src="js/designesia.js"></script>
+
+
+    </body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Прочети.ме</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta name="viewport" content="width=1280, initial-scale=1">
 
 
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -248,6 +248,12 @@
 
 	    <!-- Speech SDK Authorization token -->
 	    <script>
+
+		var siteWidth = 1280;
+var scale = screen.width /siteWidth;
+
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+
 	    // Note: Replace the URL with a valid endpoint to retrieve
 	    //       authorization tokens for your subscription.
 	    var authorizationEndpoint = "token.php";
